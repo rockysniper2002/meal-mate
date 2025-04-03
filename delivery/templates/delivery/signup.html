@@ -8,30 +8,25 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <h3> Sign Up Below: </h3>
+    <h3>Sign up below:</h3>
     <form method="POST" action="{% url 'handle_signup' %}">
         {% csrf_token %}
-        <label>Username:</label>
+        <label>Username </label>
         <input type="text" name="username">
         <br><br>
-
-        <label>Password:</label>
+        <label>Password </label>
         <input type="password" name="password">
         <br><br>
-
-        <label>Email:</label>
+        <label>Email </label>
         <input type="email" name="email">
         <br><br>
-
-        <label>Mobile Number:</label>
-        <input type="number" name="mobile">
+        <label>Mobile </label>
+        <input type="text" name="mobile">
         <br><br>
-
-        <label>Address: </label>
+        <label>Address </label>
         <textarea name="address"></textarea>
-
-        <button type="submit">Sign Up </button>
-
+        <br><br>
+        <button type="submit">SIGN UP</button>
     </form>
 </body>
 </html>
